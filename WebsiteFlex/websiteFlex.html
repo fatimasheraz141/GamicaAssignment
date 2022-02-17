@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+        padding: 0;
+        margin:0;
+        }
+       
+        .ImageSlant{
+            height: 200px;
+            width: 100%;
+            background-color: darkcyan;
+            display: flex;
+            justify-content: center;
+            position: relative;
+        }
+        img{
+            width: 300px;
+            height: 300px;
+            border-radius: 300px;
+            position: relative;
+            top: 150px;
+        }
+
+        .divSite{
+            height: 400px;
+            width: 100%;
+            background-color: darkcyan;
+            position: absolute;
+            top: 0px;
+            left: 0px;
+            transform: skewY(-7deg);
+            transform-origin: top left;
+            z-index: -1;
+        }
+        
+        nav{
+            background-color:red;
+            display:flex;
+            line-height:15px;
+            border-radius:4px;
+            height:40px;
+            width:100vw;
+
+
+        }
+        nav ul{
+          list-style:none;
+
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <ul>
+            <li class="logo"><a href="#">Logo</a></li>
+            <li class="item"><a href="#">Photography</a></li>
+            <li class="item"><a href="#">About</a></li>
+            <li class="item"><a href="#">Contact</a></li>
+            <li class="item"><a href="#">Services</a></li>
+            <li class="item"><a href="#">FAQ</a></li>
+            <li class="buy"><a href="#">Buy Template</a></li>
+        </ul>
+    </nav>
+    <div class="ImageSlant">
+        <div class="divSite">
+        </div>
+        <img src="tom.jpeg">
+    </div>
+</body>
+</html>

@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0px;
+            padding: 0px;
+            /* overflow: hidden; */
+        }
+
+        #header{
+            background-color: #feffff;
+        }
+        
+        #NaviBar{
+            justify-content: center;
+            display: flex;
+            line-height: 70px;
+            
+        }
+        li{
+            list-style-type: none;
+            margin-inline: 15px;
+        }
+        #header> #logo {
+            width: 25px;
+            height: 25px;
+            position: absolute;
+            top: 20px;
+            left: 200px;
+        }
+        #backImage{
+            background-image: url(bg.jpg);
+            background-size: cover;
+            width: 100%;
+            min-height: 100vh;
+        }
+        #HeadLine{
+            font-family:fatima;
+            position: absolute;
+            margin: auto;
+            top: 150px;
+            left: 430px;
+        }
+
+        @font-face {
+            font-family: fatima;
+            src: url(Oswald-VariableFont_wght.ttf);
+        }
+        /* #HeadLine{
+            font-family: fatima;
+        } */
+        #para{
+            position: absolute;
+            margin: auto;
+            top: 230px;
+            left:410px;
+        }
+        #btn1{
+            background-color: red;
+            border: none;
+            position: absolute;
+            margin: auto;
+            left: 610px;
+            top: 310px;
+            height: 36px;
+            width: 90px;
+            color: white;
+        }
+        .mainDotBar{
+            position: absolute;
+            left: 1020px;
+            top:600px
+
+        }
+        .dot{
+            height: 15px;
+            width: 15px;
+            background-color: rgb(97, 96, 96);
+            border-radius: 15px;
+            display: inline-block;
+        }
+        #dot3{
+            border: 2px red solid;
+        }
+        .picPackage{
+            display: inline-flex;
+            position: relative;
+            justify-content: center;
+            top:800px;
+            left: 400px;
+        }
+        /* .socialPic{
+            display: inline-flex;
+            width: 100px;
+        }
+       */
+        /* .imagePic{
+            display: inline-block;
+
+        } */
+        /* img{
+            display: flex;
+            margin: auto;
+            justify-content: center;
+        } */
+        /* .picPack{
+            position: relative;
+            top: 180px;
+            
+        } */
+    </style>
+</head>
+<body>
+    <div id="header">
+        <img src="mylogo.jpeg" id="logo">
+        <nav id="myLogo">
+            <ol id="NaviBar">
+                <li>Home</li>
+                <li>PortFolio</li>
+                <li>About</li>
+                <li>Contact</li>
+                <li>Blog</li>
+            </ol>
+        </nav>
+    </div>
+    <div id="backImage"> 
+    <h1 id="HeadLine">GOOD DESIGN IS GOOD BUSINESS</h1>
+     <p id="para">Identifying a good business is not an easy job;an understanding of Managerial<br> Economics is needed because it provides some tools, techniques of analysis</br> and Economic concepts to make good managerial decisions.</p>
+     <button id="btn1">Learn More</button>
+    <div class="mainDotBar">
+        <div class="dot"></div>
+        <div class="dot"></div>
+        <div class="dot" id="dot3"></div>
+        <div class="dot"></div>
+        <div class="dot"></div>
+    </div> 
+    <div class="picPackage">
+        <div class="socialPic"><img src="webdesign.png"></div>
+        <div class="socialPic"><img src="SEO.png"></div>
+        <div class="socialPic"><img src="shopify.png"></div>
+        <div class="socialPic"><img src="social media.png"></div>
+    </div> 
+    </div>
+</body>
+</html>
